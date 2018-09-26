@@ -1,2 +1,2 @@
 # MyPayments
-Java-javafx project
+Simple javafx app to store personal payments.
