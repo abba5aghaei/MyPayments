@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="220.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="payments.view.SignupController">
+   <children>
+      <TabPane layoutX="29.0" layoutY="14.0" prefHeight="300.0" prefWidth="300.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="وارد شدن">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="220.0" layoutY="33.0" text="نام کاربر:" textAlignment="RIGHT">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="220.0" layoutY="75.0" text="گذر واژه:" textAlignment="RIGHT">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="usernameField" layoutX="20.0" layoutY="30.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <PasswordField fx:id="passwordField" depthTest="ENABLE" layoutX="20.0" layoutY="70.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </PasswordField>
+                        <Button layoutX="20.0" layoutY="110.0" mnemonicParsing="false" onAction="#handleLogin" prefHeight="30.0" prefWidth="70.0" text="ورود" />
+                        <Button layoutX="100.0" layoutY="110.0" mnemonicParsing="false" onAction="#handleForgot" prefHeight="30.0" text="فراموش کرده ام" />
+                        <Hyperlink layoutX="170.0" layoutY="160.0" onAction="#handleOffline" text="ورود به صورت آفلاین" textAlignment="RIGHT" />
+                        <CheckBox fx:id="check" layoutX="20.0" layoutY="165.0" mnemonicParsing="false" onAction="#CheckRemember" text="مرا بخاطر بسپار" />
+                        <ProgressIndicator fx:id="log" layoutX="257.0" layoutY="110.0" progress="0.0" visible="false" />
+                        <Label fx:id="status_log" layoutX="226.0" layoutY="117.0" text="در حال اتصال" textAlignment="RIGHT" visible="false" AnchorPane.rightAnchor="38.0" AnchorPane.topAnchor="115.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="ساخت حساب جدید">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="228.0" layoutY="12.0" text="نام کاربر:" textAlignment="RIGHT">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="228.0" layoutY="45.0" text="گذر واژه:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="195.0" layoutY="77.0" text="تایید گذر واژه:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="245.0" layoutY="111.0" text="ایمیل:">
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="newUserField" layoutX="25.0" layoutY="14.0" />
+                        <PasswordField fx:id="newPassField" blendMode="SRC_ATOP" depthTest="ENABLE" layoutX="25.0" layoutY="45.0" />
+                        <PasswordField fx:id="newPass2Field" layoutX="25.0" layoutY="80.0" />
+                        <TextField fx:id="emailField" layoutX="25.0" layoutY="111.0" />
+                        <Button layoutX="25.0" layoutY="146.0" mnemonicParsing="false" onAction="#handleSignin" prefHeight="30.0" prefWidth="70.0" text="تایید">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="104.0" layoutY="146.0" mnemonicParsing="false" onAction="#handleCancel" prefHeight="30.0" prefWidth="70.0" text="انصراف">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                        <ProgressIndicator fx:id="sig" layoutX="257.0" layoutY="141.0" progress="0.0" visible="false" />
+                        <Label fx:id="status_sig" layoutX="139.0" layoutY="146.0" text="در حال اتصال..." textAlignment="RIGHT" visible="false" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="146.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,25 @@
+@font-face {
+    src: url("../../../resources/fonts/AdobeArabic-Regular.otf");
+}
+.label {
+    -fx-font-size: 14pt;
+    -fx-font-family: "Adobe Arabic";
+}
+
+.label-bright {
+    -fx-font-size: 16pt;
+    -fx-font-family: "Adobe Arabic";
+}
+
+.label-header {
+    -fx-font-size: 30pt;
+    -fx-font-family: "Adobe Arabic";
+}
+.text-field {
+    -fx-font-size: 16pt;
+    -fx-font-family: "Adobe Arabic";
+}
+.button {
+    -fx-font-family: "Adobe Arabic", Helvetica, Arial, sans-serif;
+    -fx-font-size: 14pt;
+}

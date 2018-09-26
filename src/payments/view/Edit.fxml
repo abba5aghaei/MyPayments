@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="332.0" prefWidth="372.0" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="payments.view.EditController">
+   <children>
+      <TextField fx:id="payforField" layoutX="26.0" layoutY="47.0" prefHeight="37.0" prefWidth="241.0" AnchorPane.rightAnchor="105.0" AnchorPane.topAnchor="47.0" />
+      <TextField fx:id="priceField" layoutX="26.0" layoutY="98.0" prefHeight="37.0" prefWidth="241.0" />
+      <TextField fx:id="dateField" layoutX="26.0" layoutY="152.0" prefHeight="37.0" prefWidth="241.0" />
+      <TextField fx:id="commentField" layoutX="26.0" layoutY="207.0" prefHeight="37.0" prefWidth="241.0" />
+      <Label layoutX="294.0" layoutY="215.0" text="توضیحات:" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="215.0" />
+      <Label layoutX="325.0" layoutY="160.0" text="تاریخ:" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="160.0" />
+      <Label layoutX="325.0" layoutY="106.0" text="مبلغ:" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="106.0" />
+      <Label layoutX="372.0" layoutY="55.0" text="بابت پرداخت:" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="55.0" />
+      <Button layoutX="174.0" layoutY="317.0" mnemonicParsing="false" onAction="#handleOk" prefWidth="70.0" text="تایید" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="30.0" />
+      <Button layoutX="281.0" layoutY="317.0" mnemonicParsing="false" onAction="#handleCancel" prefWidth="70.0" text="لغو" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="110.0" />
+   </children>
+</AnchorPane>

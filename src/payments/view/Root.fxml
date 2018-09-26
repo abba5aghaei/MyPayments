@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane prefHeight="600.0" prefWidth="1200.0" stylesheets="@Design.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="payments.view.RootController">
+   <top>
+      <MenuBar nodeOrientation="RIGHT_TO_LEFT" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="فایل">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleNew" text="جدید">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="N" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#handleOpen" text="باز کردن">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="O" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#handleAdd" text="اضافه کردن">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="A" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSave" text="ذخیره">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#handleSaveAs" text="ذخیره بعنوان...">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="DOWN" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <SeparatorMenuItem mnemonicParsing="false" />
+                  <MenuItem mnemonicParsing="false" onAction="#handlePrint" text="پرینت" />
+              <MenuItem mnemonicParsing="false" onAction="#handleExit" text="خروج" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="پایگاه داده">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#hanldeSaveDB" text="ذخیره در پایگاه داده">
+                     <accelerator>
+                        <KeyCodeCombination alt="DOWN" code="A" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#handleLoadDB" text="بارگذاری از پایگاه داده">
+                     <accelerator>
+                        <KeyCodeCombination alt="DOWN" code="L" control="UP" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="ابزار">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleShowChart" text="نمایش نمودار" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="حساب کاربری">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleLogin" text="ورود/ساخت حساب" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleOut" text="خروج از حساب" />
+               </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="راهنمایی">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleAbout" text="درباره" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

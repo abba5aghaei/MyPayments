@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="498.0" prefWidth="630.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="payments.view.ChartController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="450.0" prefWidth="620.0">
+         <children>
+            <BarChart fx:id="barChart" layoutX="40.0" layoutY="25.0" prefHeight="450.0" prefWidth="620.0" title="نمودار پرداختهای ماهانه" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <xAxis>
+                  <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis side="LEFT" />
+               </yAxis>
+            </BarChart>
+         </children>
+      </AnchorPane>
+      <ComboBox fx:id="list" layoutX="367.0" layoutY="458.0" onAction="#selectYear" prefWidth="150.0" AnchorPane.bottomAnchor="15.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ComboBox>
+      <Label layoutX="529.0" layoutY="458.0" text="انتخاب سال:" AnchorPane.bottomAnchor="15.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Button layoutX="71.0" layoutY="458.0" mnemonicParsing="false" onAction="#close" prefWidth="65.0" text="بستن" AnchorPane.bottomAnchor="15.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+   </children>
+</AnchorPane>
