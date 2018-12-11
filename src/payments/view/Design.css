@@ -1,5 +1,5 @@
 @font-face {
-    src: url("../../../resources/fonts/AdobeArabic-Regular.otf");
+    src: url("resources/fonts/AdobeArabic-Regular.otf");
 }
 .label {
     -fx-font-size: 14pt;

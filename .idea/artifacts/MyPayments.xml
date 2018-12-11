@@ -1,0 +1,20 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="MyPayments">
+    <output-path>$PROJECT_DIR$</output-path>
+    <properties id="javafx-properties">
+      <options>
+        <option name="appClass" value="payments.Main" />
+        <option name="description" value="Java application for storing personal payments" />
+        <option name="htmlPlaceholderId" value="" />
+        <option name="title" value="My payments" />
+        <option name="vendor" value="abba5aghaei" />
+        <option name="version" value="1.0" />
+      </options>
+    </properties>
+    <root id="root">
+      <element id="archive" name="MyPayments.jar">
+        <element id="module-output" name="MyPayments" />
+      </element>
+    </root>
+  </artifact>
+</component>
